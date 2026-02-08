@@ -2,23 +2,30 @@
   font-family: 'Gotham Bold';
   src: url("../fonts/GothaProBol.otf");
   font-weight: Bold;
+  font-display: swap; 
 }
 @font-face {
   font-family: 'Gotham Regular';
   src: url("../fonts/GothaProReg.otf");
   font-weight: normal;
+  font-display: swap; 
+
 }
 
 @font-face {
   font-family: 'Gotham Light';
   src: url("../fonts/GothaProLig.otf");
   font-weight: 300;
+  font-display: swap; 
+
 }
 
 @font-face {
   font-family: 'Gotham Medium';
   src: url("../fonts/GothaProMed.otf");
   font-weight: Medium;
+  font-display: swap; 
+
 }
 body {
   margin: 0;
@@ -147,7 +154,7 @@ body {
   font-family: Gotham Bold;
 }
 
-h4 {
+h3 {
   line-height: 10px;
   font-size: clamp(20px, 2vw, 34px);
 }
@@ -250,7 +257,7 @@ h4 {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.call-to-action h4 {
+.call-to-action h3 {
   font-family: Gotham Medium;
    font-size: clamp(30px, 3vw, 40px);
    padding: 30px;

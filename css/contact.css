@@ -2,23 +2,30 @@
   font-family: 'Gotham Bold';
   src: url("../fonts/GothaProBol.otf");
   font-weight: Bold;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Gotham Regular';
   src: url("../fonts/GothaProReg.otf");
   font-weight: normal;
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: 'Gotham Light';
   src: url("../fonts/GothaProLig.otf");
   font-weight: 300;
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: 'Gotham Medium';
   src: url("../fonts/GothaProMed.otf");
   font-weight: Medium;
+  font-display: swap;
+
 }
 body {
 	margin: 0;
@@ -98,7 +105,7 @@ display: flex;
 	left: 25%;
 	top: 1vh;
 }
-.description h2{
+.description h1{
 	width: 60%;
 	font-size: clamp(40px, 6vw, 60px);
 	font-family: Gotham Bold; 
