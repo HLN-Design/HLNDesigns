@@ -70,7 +70,7 @@ body {
 .navlinks a:hover {
 	background-color: #9a180f;
 }
-.main {
+.video-section {
 	position: relative;
 	top: 80px;
 	width: 100%;
@@ -460,7 +460,7 @@ section.footer a:hover {
 		color: white !important;
 		background-color: #E41E11 !important;
 	}
-	.main {
+	.video-section {
 		position: relative;
 		top: 70px;
 		width: 100%;
@@ -597,7 +597,7 @@ section.footer a:hover {
 		color: white !important;
 		background-color: #E41E11 !important;
 	}
-	.main {
+	.video-section {
 		position: relative;
 		top: 70px;
 		width: 100%;
@@ -732,7 +732,7 @@ section.footer a:hover {
 		color: white !important;
 		background-color: #E41E11 !important;
 	}
-	.main {
+	.video-section {
 		position: relative;
 		top: 70px;
 		width: 100%;
