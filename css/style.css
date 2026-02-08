@@ -40,7 +40,7 @@ body {
 	top: 0px;
 	width: 100%;
 	height: 83px;
-	background: #E41E11;
+	background: #ee3224;
 	z-index: 9999999999;
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
 }
@@ -57,7 +57,7 @@ body {
 	line-height: 43px;
 	padding: 33px;
 	padding-inline: 90px;
-	background-color: #E41E11;
+	background-color: #ee3224;
 }
 .navlinks {
 	list-style: none;
@@ -105,11 +105,11 @@ body {
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.836);
 }
 .redletter {
-	color: #E41E11;
+	color: #ee3224;
 	font-family: Gotham Bold;
 }
 .view-project-btn {
-	background-color: #E41E11;
+	background-color: #ee3224;
 	color: white;
 	padding: 30px 90px;
 	text-decoration: none;
@@ -121,10 +121,10 @@ body {
 }
 .view-project-btn:hover {
 	background-color: white;
-	color: #E41E11;
+	color: #ee3224;
 }
 .highlight {
-	color: #E41E11;
+	color: #ee3224;
 	font-family: Gotham Bold;
 }
 .text-with-bar {
@@ -141,7 +141,7 @@ body {
 	left: 8.5px;
 	width: 40px;
 	height: 15px;
-	background-color: #E41E11;
+	background-color: #ee3224;
 }
 .Work {
 	width: 100%;
@@ -168,7 +168,7 @@ body {
 	text-underline-offset: 10px
 }
 .view-projects a:hover{
-	color: #E41E11;
+	color: #ee3224;
 }
 .grid-container {
   display: grid;
@@ -233,7 +233,7 @@ position: absolute;
    font-size: clamp(30px, 3vw, 40px);
 }
 .call-to-action a:hover {
-  background-color: #E41E11;
+  background-color: #ee3224;
   transform: translateY(-3px);
 }
 section.footer {
@@ -242,7 +242,7 @@ section.footer {
   left: 0;
   width: 100%;
   height: 200px;
-  background-color: #E41E11;
+  background-color: #ee3224;
   z-index: -10;
   display: flex;
   flex-direction: column;
@@ -402,7 +402,7 @@ section.footer a:hover {
 		left: 0;
 		width: 100%;
 		height: 370px;
-		background-color: #E41E11;
+		background-color: #ee3224;
 		z-index: 1000000000;
 		padding-top: 100px;
 	}
@@ -458,7 +458,7 @@ section.footer a:hover {
 	}
 	.navlinks a:hover {
 		color: white !important;
-		background-color: #E41E11 !important;
+		background-color: #ee3224 !important;
 	}
 	.video-section {
 		position: relative;
@@ -542,7 +542,7 @@ section.footer a:hover {
 		left: 0;
 		width: 100%;
 		height: 370px;
-		background-color: #E41E11;
+		background-color: #ee3224;
 		z-index: 1000000000;
 		padding-top: 100px;
 	}
@@ -595,7 +595,7 @@ section.footer a:hover {
 	}
 	.navlinks a:hover {
 		color: white !important;
-		background-color: #E41E11 !important;
+		background-color: #ee3224 !important;
 	}
 	.video-section {
 		position: relative;
@@ -677,7 +677,7 @@ section.footer a:hover {
 		left: 0;
 		width: 100%;
 		height: 370px;
-		background-color: #E41E11;
+		background-color: #ee3224;
 		z-index: 1000000000;
 		padding-top: 100px;
 	}
@@ -730,7 +730,7 @@ section.footer a:hover {
 	}
 	.navlinks a:hover {
 		color: white !important;
-		background-color: #E41E11 !important;
+		background-color: #ee3224 !important;
 	}
 	.video-section {
 		position: relative;
