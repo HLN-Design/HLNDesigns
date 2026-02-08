@@ -49,7 +49,7 @@ body {
 	top: 0px;
 	width: 100%;
 	height: 83px;
-	background: #ee3224;
+	background: #E41E11;
 	z-index: 9999999999;
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
 	font-family: Gotham Bold;
@@ -67,7 +67,7 @@ body {
 	line-height: 44px;
 	padding: 33px;
 	padding-inline: 90px;
-	background-color: #ee3224;
+	background-color: #E41E11;
 }
 .navlinks {
 	list-style: none;
@@ -82,7 +82,7 @@ body {
 }
 
 .highlight {
-	color: #ee3224;
+	color: #E41E11;
 }
 
 .Work {
@@ -154,7 +154,7 @@ input[name="category"] {
 }
 
 .category-list label:hover {
-  color: #ee3224
+  color: #E41E11
 }
 
 /* Highlight Active Category */
@@ -164,7 +164,7 @@ input[name="category"] {
 #experiential:checked ~ .category-list label[for="experiential"],
 #other:checked ~ .category-list label[for="other"],
 #showreel:checked ~ .category-list label[for="showreel"] { /* Removed comma here */
-  color: #ee3224; 
+  color: #E41E11; 
   font-weight: bold;
 }
 
@@ -211,7 +211,7 @@ input[name="category"] {
 }
 
 .call-to-action a:hover {
-  background-color: #ee3224;
+  background-color: #E41E11;
   transform: translateY(-3px);
 }
 
@@ -221,7 +221,7 @@ section.footer {
   left: 0;
   width: 100%;
   height: 200px;
-  background-color: #ee3224;
+  background-color: #E41E11;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -354,7 +354,7 @@ section.footer a:hover {
 		left: 0;
 		width: 100%;
 		height: 370px;
-		background-color: #ee3224;
+		background-color: #E41E11;
 		z-index: 1000000000;
 		padding-top: 100px;
 	}
@@ -410,7 +410,7 @@ section.footer a:hover {
 	}
 	.navlinks a:hover {
 		color: white !important;
-		background-color: #ee3224 !important;
+		background-color: #E41E11 !important;
 	}
 	.work{
 		width: 100%;
