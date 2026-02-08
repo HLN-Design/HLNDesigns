@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <title>HLN Designs | Epstein Files</title>
+        <link rel="stylesheet" href="css/explainer_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/logos/logo_icon_red.svg" type="image/x-icon">
+    </head>
+
+    <body>
+      <section class="navbar">
+    <a class="logo" href="index.html">
+        <img src="img/logos/logo_full_white.svg" alt="Logo">
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav>
+        <ul class="navlinks">
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+        </ul>
+    </nav>
+</section>
+<div class="layout-wrapper">
+  <aside class="left-column">
+    <div class="sticky-content">
+      
+      <div class="description">
+        <h2>The Epstein Files<span class="highlight">.</span></h2>
+        <p>This explainer explores the high-stakes release of the first batch of Epstein files by the DOJ, a story built around a vast archive of documents, images, and videos. To reflect the gravity of the information, I developed a mysterious, investigative visual language.</p>
+       <p>Using dark, moody tones, inverted typography, and vintage film-grain textures, the design leans into a sense of secrecy and unease, while unifying a wide range of media into a cohesive look.</p>
+       <p>Operating in broadcast television means tight, unmovable deadlines, I completed the full design, integration, and approval process in just three hours. This project aired the same day on 9News, reaching an audience of 1.39 million viewers, and later accumulated an additional 13,000 views on the 9News YouTube channel.</p>
+      <h4>Credits</h4>
+      <p><span class="bold">Company:</span> 9News</p>
+      <p><span class="bold">Motion Design & Art Direction:</span> Helen Wang</p>
+      <p><span class="bold">Producer:</span> Amber Cunneen</p>
+      <p><span class="bold">Reporter:</span> Reid Butler</p>
+      <p><span class="bold">Software:</span> After Effects, Photoshop, Media Encoder</p>
+      
+      </div>
+    </div>
+  </aside>
+
+  <main class="right-column">
+    <div class="video-controls">
+        <button>Play</button>
+        <button>Pause</button>
+        <button>Mute</button>
+      </div>
+      <video controls poster="img/portfolio/thumbnails/epstein.png" src="img/portfolio/epsteinfiles/epstein_files.mp4" alt="Epstein Files Motion Graphics Design Project" width="100%"></video>
+    <img src="img/portfolio/epsteinfiles/epstein2.png" alt="Epstein Files Motion Graphics Design Project BTS1">
+    <img src="img/portfolio/epsteinfiles/epstein.gif" alt="Epstein Files Motion Graphics Design Project BTS2">
+    <img src="img/portfolio/epsteinfiles/epstein1.png" alt="Epstein Files Motion Graphics Design Project BTS3">
+    <img src="img/portfolio/epsteinfiles/epstein2.gif" alt="Epstein Files Motion Graphics Design Project BTS4">
+  </main>
+</div>
+<section class="Work">
+ <h1 class="work-text">
+    Other work
+  </h1>
+  <div class="grid-container">
+
+    <div class="block explainers"><a href="moriarty.html"><img src="img/portfolio/thumbnails/moriarty.png"><div class="overlay-text">Greg Moriarty appointment</div></a></div>
+    <div class="block explainers"><a href="election.html"><img src="img/portfolio/thumbnails/election.png" alt="Federal Election 2025 Motion Graphics Design Project"><div class="overlay-text">Federal Election 2025</div></a></div>
+     <div class="block explainers"><a href="chikarovski.html"><img src="img/portfolio/thumbnails/chikarovski.png" alt="Chikarovski Drug Sentencing Motion Graphics Design Project"><div class="overlay-text">Chikarovski drug sentencing</div></a></div>
+    <div class="block infographics"><a href="ward.html"><img src="img/portfolio/thumbnails/ward.png"  alt="Gareth Ward Arrest Motion Graphics Design Project"><div class="overlay-text">Gareth Ward Arrest</div></a></div>
+    <div class="block infographics"><a href="iran.html"><img src="img/portfolio/thumbnails/iran.png" alt="US strikes on Iran Motion Graphics Design Project"><div class="overlay-text">US Strikes on Iran</div></a></div>
+    <div class="block infographics"><a href="qantas.html"><img src="img/portfolio/thumbnails/qantas.png" alt="Qantas Motion Graphics Design Project"><div class="overlay-text">Qantas: Profits & loss</div></a></div>
+  </div>
+     <div class="view-projects"><a href="work.html">View all projects</a></div>
+    </section>
+  <section class="call-to-action">
+    <h4 class="work-text">
+    Let's work together
+  </h4>
+   <a href="contact.html">Contact me</a>
+
+  </section>
+  
+     <section class="footer">
+        <a class="logo" href="index.html"><img src="img/logos/logo_full_white.svg" alt="Logo"> </a>
+      <nav>
+            <ul class="footer links">
+            <li><a href="mailto:HLNDesigning@gmail.com">Email</a></li>
+            <li><a href="https://www.instagram.com/hlnxdesign/">Instagram</a></li>
+            <li><a href="https://www.behance.net/WHOISHELENANYWAYS/projects">Behance</a></li>
+            <li><a href="https://www.linkedin.com/in/whoishelenanyways/">Linkedin</a></li>
+        </ul>
+    </nav>
+
+</section>
+<div id="lightbox" class="lightbox" onclick="this.classList.remove('active')">
+        <img src="" alt="Enlarged view">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+
+        // This selects all images in your gallery
+        document.querySelectorAll('.right-column img').forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('src');
+                lightboxImg.setAttribute('src', src); // Put the clicked image link into the lightbox
+                lightbox.classList.add('active');     // Show the lightbox
+            });
+        });
+    </script>
+</body>
+</html>

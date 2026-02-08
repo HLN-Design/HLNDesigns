@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <title>HLN Designs | Eras Tour</title>
+        <link rel="stylesheet" href="css/explainer_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/logos/logo_icon_red.svg" type="image/x-icon">
+    </head>
+    <body>
+      <section class="navbar">
+    <a class="logo" href="index.html">
+        <img src="img/logos/logo_full_white.svg" alt="Logo">
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav>
+        <ul class="navlinks">
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+        </ul>
+    </nav>
+</section>
+
+<div class="layout-wrapper">
+  <aside class="left-column">
+    <div class="sticky-content">
+      <div class="description">
+        <h2>Eras Tour<span class="highlight">.</span></h2>
+        <p>It's the end of an era. This project marks the conclusion of Taylor Swift's record-breaking 21-month Eras Tour. To capture the magnitude and cultural impact of the event, I developed a visual language that evolves from the vibrant aesthetic of the tour into a darker, more sophisticated tone aligned with the release of her new album.</p>
+       <p>Conceived as a visual homage to the artist, the design incorporates iconic elements of the Swift brand, including the tour poster, typography, and fan-centric motifs like friendship bracelets, blending them seamlessly with high-energy concert imagery. The dynamic camera movements guides the viewer through to key statistics while preserving the visual richness of the source material while maintaining narrative flow.</p>
+       <p> This project later was shared on Tiktok and accumulated 387,700 views.</p>
+       <p><span class="bold">"So many people mentioned to me how great it looked - including elements from Taylor's tour that I hadn't even flagged. Very creative and visually stunning!!"</span> - Supervising Producer </p>
+       
+      <h4>Credits</h4>
+      <p><span class="bold">Company:</span> Today Show</p>
+      <p><span class="bold">Motion Design & Art Direction:</span> Helen Wang</p>
+      <p><span class="bold">Producer:</span> Lachlan Grant</p>
+      <p><span class="bold">Reporter:</span> Sophie Walsh</p>
+      <p><span class="bold">Software:</span> After Effects, Photoshop, Media Encoder</p> 
+      </div>
+    </div>
+  </aside>
+
+  <main class="right-column">
+    <div class="video-controls">
+        <button>Play</button>
+        <button>Pause</button>
+        <button>Mute</button>
+      </div>
+      <video controls poster="img/portfolio/thumbnails/eras_tour.png" src="img/portfolio/erastour/erastour.mp4" alt="Taylor Swift Eras Tour Motion Graphics Design Project" width="100%"></video>
+    <img src="img/portfolio/erastour/era4.png" alt="Taylor Swift Eras Tour Motion Graphics Design Project BTS">
+    <img src="img/portfolio/erastour/era1.gif" alt="Taylor Swift Eras Tour Motion Graphics Design Project BTS2">
+    <img src="img/portfolio/erastour/era3.png" alt="Taylor Swift Eras Tour Motion Graphics Design Project BTS3">
+    <img src="img/portfolio/erastour/era5.png" alt="Taylor Swift Eras Tour Motion Graphics Design Project BTS">
+    <img src="img/portfolio/erastour/era2.gif" alt="Taylor Swift Eras Tour Motion Graphics Design Project BTS">
+  </main>
+</div>
+<section class="Work">
+ <h1 class="work-text">
+    Other work
+  </h1>
+  <div class="grid-container">
+     <div class="block showreel"><a href="showreel.html"><img src="img/portfolio/thumbnails/showreel.png" alt="Motion Graphics Design Showreel" ><div class="overlay-text">Showreel</div></a></div>
+    <div class="block explainers"><a href="warner_bros.html"><img src="img/portfolio/thumbnails/warner_bros.png" alt="Warner Brothers Acquisition Motion Graphics Design Project"><div class="overlay-text">Warner Brothers Acquisition</div></a></div>
+    <div class="block other"><a href="grammys.html"><img src="img/portfolio/thumbnails/grammys.png" alt="Grammy Nominations 2024 Motion Graphics Design Project"><div class="overlay-text">Grammy Nominations 2024</div></a></div>
+    <div class="block experiential"><a href="sabrina.html"><img src="img/portfolio/thumbnails/sabrina_carpenter.png" alt="Sabrina Carpenter Motion Graphics Design Project"><div class="overlay-text">Sabrina Carpenter</div></a></div>
+    <div class="block explainers"><a href="greenland.html"><img src="img/portfolio/thumbnails/greenland.png" alt="Greenland Motion Graphics Design Project"><div class="overlay-text">Greenland</div></a></div>
+    <div class="block experiential"><a href="experiential.html"><img src="img/portfolio/thumbnails/screens.png" alt="Experiential Motion Graphics Design Projects"><div class="overlay-text">MISC experiential screens</div></a></div>   
+  </div>
+     <div class="view-projects"><a href="work.html">View all projects</a></div>
+    </section>
+  <section class="call-to-action">
+    <h4 class="work-text">
+    Let's work together
+  </h4>
+   <a href="contact.html">Contact me</a>
+
+  </section>
+  
+     <section class="footer">
+        <a class="logo" href="index.html"><img src="img/logos/logo_full_white.svg" alt="Logo"> </a>
+      <nav>
+            <ul class="footer links">
+            <li><a href="mailto:HLNDesigning@gmail.com">Email</a></li>
+            <li><a href="https://www.instagram.com/hlnxdesign/">Instagram</a></li>
+            <li><a href="https://www.behance.net/WHOISHELENANYWAYS/projects">Behance</a></li>
+            <li><a href="https://www.linkedin.com/in/whoishelenanyways/">Linkedin</a></li>
+        </ul>
+    </nav>
+
+</section>
+<div id="lightbox" class="lightbox" onclick="this.classList.remove('active')">
+        <img src="" alt="Enlarged view">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+
+        // This selects all images in your gallery
+        document.querySelectorAll('.right-column img').forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('src');
+                lightboxImg.setAttribute('src', src); // Put the clicked image link into the lightbox
+                lightbox.classList.add('active');     // Show the lightbox
+            });
+        });
+    </script>
+</body>
+</html>

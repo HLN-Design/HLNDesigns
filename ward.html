@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HLN Designs | Gareth Ward</title>
+        <link rel="stylesheet" href="css/explainer_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/logos/logo_icon_red.svg" type="image/x-icon">
+    </head>
+
+    <body>
+      <section class="navbar">
+    <a class="logo" href="index.html">
+        <img src="img/logos/logo_full_white.svg" alt="Logo">
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav>
+        <ul class="navlinks">
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+        </ul>
+    </nav>
+</section>
+
+<div class="layout-wrapper">
+  <aside class="left-column">
+    <div class="sticky-content">
+      
+      <div class="description">
+        <h2>Gareth Ward Arrest<span class="highlight">.</span></h2>
+        <p>This segment reported on the guilty verdict of former Kiama MP Gareth Ward for historical sexual abuse offences against two young men. The challenge was to visualise the timeline and locations of the assaults while maintaining legal sensitivity and victim anonymity.</p>
+       <p>I utilised a minimal 3D reconstruction style to depict the incidents, placing abstract, low-poly 3D figures into a minimal 3D grey-scale environment. With my camera, I orbited these frozen scenes to establish the spatial relationships between the perpetrator and the victims and was sure to end it at an angle which showcases the intimidation and power dynamics
+      .</p>
+       <h4>Credits</h4>
+      <p><span class="bold">Company:</span> 9News</p>
+      <p><span class="bold">Motion Design & Art Direction:</span> Helen Wang</p>
+      <p><span class="bold">Producer:</span> Andrew Macfarlane</p>
+      <p><span class="bold">Reporter:</span> Hayley Francis</p>
+      <p><span class="bold">Software:</span> After Effects, Photoshop, Media Encoder, Cinema 4D</p>
+      
+      </div>
+    </div>
+  </aside>
+
+  <main class="right-column">
+    <div class="video-controls">
+        <button>Play</button>
+        <button>Pause</button>
+        <button>Mute</button>
+      </div>
+      <video controls poster="img/portfolio/thumbnails/ward.png" src="img/portfolio/ward/ward.mp4" alt="Gareth Ward Motion Graphics Design Project" width="100%"></video>
+    <img src="img/portfolio/ward/ward3.png" alt="Gareth Ward Motion Graphics Design Project BTS1">
+    <img src="img/portfolio/ward/ward.gif" alt="Gareth Ward Motion Graphics Design Project BTS2">
+    <img src="img/portfolio/ward/ward.gif" alt="Gareth Ward Motion Graphics Design Project BTS3">
+    <img src="img/portfolio/ward/ward4.png" alt="Gareth Ward Motion Graphics Design Project BTS4">
+  </main>
+</div>
+<section class="Work">
+ <h1 class="work-text">
+    Other work
+  </h1>
+  <div class="grid-container">
+    <div class="block explainers"><a href="epstein.html"><img src="img/portfolio/thumbnails/epstein.png" alt="Epstein Files Motion Graphics Design Project"><div class="overlay-text">Epstein Files</div></a></div>
+    <div class="block explainers"><a href="moriarty.html"><img src="img/portfolio/thumbnails/moriarty.png" alt="Greg Moriarty Motion Graphics Design Project"><div class="overlay-text">Greg Moriarty appointment</div></a></div>
+     <div class="block explainers"><a href="chikarovski.html"><img src="img/portfolio/thumbnails/chikarovski.png" alt="Chikarovski Drug Sentencing Motion Graphics Design Project"><div class="overlay-text">Chikarovski drug sentencing</div></a></div>
+    <div class="block infographics"><a href="iran.html"><img src="img/portfolio/thumbnails/iran.png" alt="US strikes on Iran Motion Graphics Design Project"><div class="overlay-text">US Strikes on Iran</div></a></div>
+    <div class="block infographics"><a href="qantas.html"><img src="img/portfolio/thumbnails/qantas.png" alt="Qantas Motion Graphics Design Project"><div class="overlay-text">Qantas: Profits & loss</div></a></div>
+    <div class="block experiential"><a href="experiential.html"><img src="img/portfolio/thumbnails/screens.png" alt="Experiential Motion Graphics Design Projects"><div class="overlay-text">MISC experiential screens</div></a></div>   
+  </div>
+     <div class="view-projects"><a href="work.html">View all projects</a></div>
+    </section>
+  <section class="call-to-action">
+    <h4 class="work-text">
+    Let's work together
+  </h4>
+   <a href="contact.html">Contact me</a>
+
+  </section>
+  
+     <section class="footer">
+        <a class="logo" href="index.html"><img src="img/logos/logo_full_white.svg" alt="Logo"> </a>
+      <nav>
+            <ul class="footer links">
+            <li><a href="mailto:HLNDesigning@gmail.com">Email</a></li>
+            <li><a href="https://www.instagram.com/hlnxdesign/">Instagram</a></li>
+            <li><a href="https://www.behance.net/WHOISHELENANYWAYS/projects">Behance</a></li>
+            <li><a href="https://www.linkedin.com/in/whoishelenanyways/">Linkedin</a></li>
+        </ul>
+    </nav>
+
+</section>
+<div id="lightbox" class="lightbox" onclick="this.classList.remove('active')">
+        <img src="" alt="Enlarged view">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+
+        // This selects all images in your gallery
+        document.querySelectorAll('.right-column img').forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('src');
+                lightboxImg.setAttribute('src', src); // Put the clicked image link into the lightbox
+                lightbox.classList.add('active');     // Show the lightbox
+            });
+        });
+    </script>
+</body>
+</html>

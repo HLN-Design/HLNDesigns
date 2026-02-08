@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HLN Designs | US Strikes on Iran</title>
+        <link rel="stylesheet" href="css/explainer_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/logos/logo_icon_red.svg" type="image/x-icon">
+    </head>
+
+    <body>
+      <section class="navbar">
+    <a class="logo" href="index.html">
+        <img src="img/logos/logo_full_white.svg" alt="Logo">
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav>
+        <ul class="navlinks">
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+        </ul>
+    </nav>
+</section>
+<div class="layout-wrapper">
+  <aside class="left-column">
+    <div class="sticky-content">
+      
+      <div class="description">
+        <h2>Iran Strike<span class="highlight">.</span></h2>
+        <p>This explainer covered the US military strikes on Iran's nuclear infrastructure. The narrative includes breaking down the deployment of "bunker buster" munitions against the Fordow nuclear fortress and explaining the timeline and execution of the attack.</p>
+       <p>I developed a Military Heads-Up Display (HUD) aesthetic using high-contrast blue wireframes and digital grid overlays to mimic a command center briefing. Using GeoLayers 3 in After Effects, I generated a terrain map of Iran to visualize the flight paths taken by B-2 bombers and Tomahawk missiles.</p>
+       <p> The project aired the same day on 9News, reaching an audience of 1.98 million viewers, and later accumulated an additional 420,000 views on the 9News YouTube channel.</p>
+      <h4>Credits</h4>
+      <p><span class="bold">Company:</span> 9News</p>
+      <p><span class="bold">Motion Design & Art Direction:</span> Helen Wang</p>
+      <p><span class="bold">Producer:</span> Amber Cunneen</p>
+      <p><span class="bold">Reporter:</span> Lauren Tomasi</p>
+      <p><span class="bold">Software:</span> After Effects, Photoshop, Media Encoder</p>
+      
+      </div>
+    </div>
+  </aside>
+
+  <main class="right-column">
+    <div class="video-controls">
+        <button>Play</button>
+        <button>Pause</button>
+        <button>Mute</button>
+      </div>
+      <video controls poster="img/portfolio/thumbnails/iran.png" src="img/portfolio/iran/iran.mp4" alt="US Strikes on Iran Motion Graphics Design Project" width="100%"></video>
+    <img src="img/portfolio/iran/iran2.png" alt="US Strikes on Iran Motion Graphics Design Project BTS1">
+    <img src="img/portfolio/iran/iran.gif" alt="US Strikes on Iran Motion Graphics Design Project BTS2">
+    <img src="img/portfolio/iran/iran1.png" alt="US Strikes on Iran Motion Graphics Design Project BTS3">
+    <img src="img/portfolio/iran/iran3.png" alt="US Strikes on Iran Motion Graphics Design Project BTS4">
+  </main>
+</div>
+<section class="Work">
+ <h1 class="work-text">
+    Other work
+  </h1>
+  <div class="grid-container">
+    <div class="block explainers"><a href="epstein.html"><img src="img/portfolio/thumbnails/epstein.png" alt="Epstein Files Motion Graphics Design Project"><div class="overlay-text">Epstein Files</div></a></div>
+    <div class="block explainers"><a href="moriarty.html"><img src="img/portfolio/thumbnails/moriarty.png" alt="Greg Moriarty Motion Graphics Design Project"><div class="overlay-text">Greg Moriarty appointment</div></a></div>
+    <div class="block explainers"><a href="election.html"><img src="img/portfolio/thumbnails/election.png" alt="Federal Election 2025 Motion Graphics Design Project"><div class="overlay-text">Federal Election 2025</div></a></div>
+    <div class="block explainers"><a href="greenland.html"><img src="img/portfolio/thumbnails/greenland.png" alt="Greenland Motion Graphics Design Project"><div class="overlay-text">Greenland</div></a></div>
+    <div class="block infographics"><a href="qantas.html"><img src="img/portfolio/thumbnails/qantas.png" alt="Qantas Motion Graphics Design Project"><div class="overlay-text">Qantas: Profits & loss</div></a></div>
+    <div class="block experiential"><a href="experiential.html"><img src="img/portfolio/thumbnails/screens.png" alt="Experiential Motion Graphics Design Projects"><div class="overlay-text">MISC experiential screens</div></a></div>   
+  </div>
+     <div class="view-projects"><a href="work.html">View all projects</a></div>
+    </section>
+    <section class="call-to-action">
+    <h4 class="work-text">
+    Let's work together
+  </h4>
+   <a href="contact.html">Contact me</a>
+
+  </section>
+  
+     <section class="footer">
+        <a class="logo" href="index.html"><img src="img/logos/logo_full_white.svg" alt="Logo"> </a>
+      <nav>
+            <ul class="footer links">
+            <li><a href="mailto:HLNDesigning@gmail.com">Email</a></li>
+            <li><a href="https://www.instagram.com/hlnxdesign/">Instagram</a></li>
+            <li><a href="https://www.behance.net/WHOISHELENANYWAYS/projects">Behance</a></li>
+            <li><a href="https://www.linkedin.com/in/whoishelenanyways/">Linkedin</a></li>
+        </ul>
+    </nav>
+
+</section>
+<div id="lightbox" class="lightbox" onclick="this.classList.remove('active')">
+        <img src="" alt="Enlarged view">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+
+        // This selects all images in your gallery
+        document.querySelectorAll('.right-column img').forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('src');
+                lightboxImg.setAttribute('src', src); // Put the clicked image link into the lightbox
+                lightbox.classList.add('active');     // Show the lightbox
+            });
+        });
+    </script>
+</body>
+</html>

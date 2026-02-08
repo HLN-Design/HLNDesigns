@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+       <head>
+        <title>HLN Designs | Grammy Nominations 2024</title>
+        <link rel="stylesheet" href="css/explainer_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/logos/logo_icon_red.svg" type="image/x-icon">
+    </head>
+
+    <body>
+      <section class="navbar">
+    <a class="logo" href="index.html">
+        <img src="img/logos/logo_full_white.svg" alt="Logo">
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav>
+        <ul class="navlinks">
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+        </ul>
+    </nav>
+</section>
+<div class="layout-wrapper">
+  <aside class="left-column">
+    <div class="sticky-content">
+      
+      <div class="description">
+        <h2>2024 Grammy Nominations<span class="highlight">.</span></h2>
+        <p>This sequence served as the broadcast opener for the 2024 Grammy Nominations announcement on the Today Show. The brief was to create a high-energy visual hook that celebrated the artists.</p>
+       <p>I designed a sleek, immersive environment arranging dynamic music video footage of nominees while maintaining the established Grammys look. The iconic golden gramophone anchors the scene, while glowing teal accents and shallow depth of field effects provide a cinematic, tech-forward finish that matched the acadamy's look.</p>
+       <p>This design functioned as the primary visual identity for the segment, instantly engaging the audience and framing the story with a polished, high-gloss aesthetic.</p>
+      <h4>Credits</h4>
+      <p><span class="bold">Company:</span> Today Show</p>
+      <p><span class="bold">Motion Design & Art Direction:</span> Helen Wang</p>
+      <p><span class="bold">Producer:</span> Lachlan Grant</p>
+      <p><span class="bold">Software:</span> After Effects, Photoshop, Media Encoder</p>
+      <p><span class="bold">Song:</span> Fortnight by Taylor Swift ft. Post Malone</p>
+      
+      </div>
+    </div>
+  </aside>
+
+  <main class="right-column">
+    <div class="video-controls">
+        <button>Play</button>
+        <button>Pause</button>
+        <button>Mute</button>
+      </div>
+      <video controls poster="img/portfolio/thumbnails/grammys.png" src="img/portfolio/grammys/grammynoms.mp4" alt="Grammy Nominations 2024 Motion Graphics Design Project" width="100%"></video>
+    <img src="img/portfolio/grammys/grammys2.png" alt="Grammy Nominations 2024 Motion Graphics Design Project BTS1">
+    <img src="img/portfolio/grammys/grammys1.gif" alt="Grammy Nominations 2024 Motion Graphics Design Project BTS2">
+    <img src="img/portfolio/grammys/grammys3.png" alt="Grammy Nominations 2024 Motion Graphics Design Project BTS3">
+    <img src="img/portfolio/grammys/grammys2.gif" alt="Grammy Nominations 2024 Motion Graphics Design Project BTS4">
+    <img src="img/portfolio/grammys/grammys1.png" alt="Grammy Nominations 2024 Motion Graphics Design Project BTS5">
+  </main>
+</div>
+<section class="Work">
+ <h1 class="work-text">
+    Other work
+  </h1>
+  <div class="grid-container">
+   <div class="block experiential"><a href="sabrina.html"><img src="img/portfolio/thumbnails/sabrina_carpenter.png" alt="Sabrina Carpenter Motion Graphics Design Project"><div class="overlay-text">Sabrina Carpenter</div></a></div>
+    <div class="block infographics"><a href="erastour.html"><img src="img/portfolio/thumbnails/eras_tour.png" alt="Taylor Swift Eras Tour Motion Graphics Design Project"><div class="overlay-text">Eras Tour Review</div></a></div>
+    <div class="block experiential"><a href="experiential.html"><img src="img/portfolio/thumbnails/screens.png" alt="Experiential Motion Graphics Design Projects"><div class="overlay-text">MISC experiential screens</div></a></div>   
+    <div class="block infographics"><a href="QANTAS.html"><img src="img/portfolio/thumbnails/qantas.png" alt="Qantas Motion Graphics Design Project"><div class="overlay-text">Qantas: Profits & loss</div></a></div>
+    <div class="block explainers"><a href="warner_bros.html"><img src="img/portfolio/thumbnails/warner_bros.png" alt="Warner Brothers Acquisition Motion Graphics Design Project"><div class="overlay-text">Warner Brothers Acquisition</div></a></div>
+    <div class="block showreel"><a href="showreel.html"><img src="img/portfolio/thumbnails/showreel.png" alt="Motion Graphics Design Showreel" ><div class="overlay-text">Showreel</div></a></div> 
+  </div>
+     <div class="view-projects"><a href="work.html">View all projects</a></div>
+    </section>
+  <section class="call-to-action">
+    <h4 class="work-text">
+    Let's work together
+  </h4>
+   <a href="contact.html">Contact me</a>
+
+  </section>
+  
+     <section class="footer">
+        <a class="logo" href="index.html"><img src="img/logos/logo_full_white.svg" alt="Logo"> </a>
+      <nav>
+            <ul class="footer links">
+            <li><a href="mailto:HLNDesigning@gmail.com">Email</a></li>
+            <li><a href="https://www.instagram.com/hlnxdesign/">Instagram</a></li>
+            <li><a href="https://www.behance.net/WHOISHELENANYWAYS/projects">Behance</a></li>
+            <li><a href="https://www.linkedin.com/in/whoishelenanyways/">Linkedin</a></li>
+        </ul>
+    </nav>
+
+</section>
+<div id="lightbox" class="lightbox" onclick="this.classList.remove('active')">
+        <img src="" alt="Enlarged view">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+
+        // This selects all images in your gallery
+        document.querySelectorAll('.right-column img').forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('src');
+                lightboxImg.setAttribute('src', src); // Put the clicked image link into the lightbox
+                lightbox.classList.add('active');     // Show the lightbox
+            });
+        });
+    </script>
+</body>
+</html>

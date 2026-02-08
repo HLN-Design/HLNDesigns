@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HLN Designs | Chikarovski Sentencing</title>
+        <link rel="stylesheet" href="css/explainer_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/logos/logo_icon_red.svg" type="image/x-icon">
+    </head>
+
+    <body>
+      <section class="navbar">
+    <a class="logo" href="index.html">
+        <img src="img/logos/logo_full_white.svg" alt="Logo">
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav>
+        <ul class="navlinks">
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+        </ul>
+    </nav>
+</section>
+<div class="layout-wrapper">
+  <aside class="left-column">
+    <div class="sticky-content">
+      
+      <div class="description">
+        <h2>Chikarovski Drug Sentencing<span class="highlight">.</span></h2>
+        <p>Mark Chikarovski, son of a former NSW Liberal leader, was found guilty for operating a sophisticated dark web drug syndicate. This explainer showcases his operations and how he got caught.</p>
+       <p>To bring the "dark web" to the screen, I developed a high-tech look, utalising glowing typography and chromatic aberration. Key digital evidence was visualised by turning abstract data into tangible objects.</p>
+      <p>The project aired, reaching an audience of 1.57 million viewers, and later accumulated an additional 33,700 views on social media.</p>
+      <h4>Credits</h4>
+      <p><span class="bold">Company:</span> 9News</p>
+      <p><span class="bold">Motion Design & Art Direction:</span> Helen Wang</p>
+      <p><span class="bold">Producer:</span> Andrew Macfarlane</p>
+      <p><span class="bold">Reporter:</span> Annalise Bolt</p>
+      <p><span class="bold">Software:</span> After Effects, Photoshop, Media Encoder</p>
+      
+      </div>
+    </div>
+  </aside>
+
+  <main class="right-column">
+    <div class="video-controls">
+        <button>Play</button>
+        <button>Pause</button>
+        <button>Mute</button>
+      </div>
+      <video controls poster="img/portfolio/thumbnails/chikarovski.png" src="img/portfolio/chikrovski/chikarovski_info.mp4" alt="Chikarovski Drug Sentencing Motion Graphics Design Project Video" width="100%"></video>
+
+    <img src="img/portfolio/chikrovski/chikarovski1.png" alt="Chikarovski Drug Sentencing Motion Graphics Design Projects BTS1">
+    <img src="img/portfolio/chikrovski/chikarovski.gif" alt="Chikarovski Drug Sentencing Motion Graphics Design Projects BTS2">
+    <img src="img/portfolio/chikrovski/chikarovski2.png" alt="Chikarovski Drug Sentencing Motion Graphics Design Projects BTS3">
+  </main>
+</div>
+<section class="Work">
+ <h1 class="work-text">
+    Other work
+  </h1>
+  <div class="grid-container">
+    <div class="block explainers"><a href="moriarty.html"><img src="img/portfolio/thumbnails/moriarty.png" alt="Greg Moriarty Motion Graphics Design Project"><div class="overlay-text">Greg Moriarty appointment</div></a></div>
+    <div class="block explainers"><a href="epstein.html"><img src="img/portfolio/thumbnails/epstein.png" alt="Epstein Files Motion Graphics Design Project"><div class="overlay-text">Epstein Files</div></a></div>
+    <div class="block explainers"><a href="election.html"><img src="img/portfolio/thumbnails/election.png" alt="Federal Election 2025 Motion Graphics Design Project"><div class="overlay-text">Federal Election 2025</div></a></div>
+    <div class="block explainers"><a href="warner_bros.html"><img src="img/portfolio/thumbnails/warner_bros.png" alt="Warner Brothers Acquisition Motion Graphics Design Project"><div class="overlay-text">Warner Brothers Acquisition</div></a></div>
+    <div class="block infographics"><a href="ward.html"><img src="img/portfolio/thumbnails/ward.png"  alt="Gareth Ward Arrest Motion Graphics Design Project"><div class="overlay-text">Gareth Ward Arrest</div></a></div>
+    <div class="block infographics"><a href="iran.html"><img src="img/portfolio/thumbnails/iran.png" alt="US strikes on Iran Motion Graphics Design Project"><div class="overlay-text">US Strikes on Iran</div></a></div> 
+  </div>
+     <div class="view-projects"><a href="work.html">View all projects</a></div>
+    </section>
+   <section class="call-to-action">
+    <h4 class="work-text">
+    Let's work together
+  </h4>
+   <a href="contact.html">Contact me</a>
+
+  </section>
+  
+     <section class="footer">
+        <a class="logo" href="index.html"><img src="img/logos/logo_full_white.svg" alt="Logo"> </a>
+      <nav>
+            <ul class="footer links">
+            <li><a href="mailto:HLNDesigning@gmail.com">Email</a></li>
+            <li><a href="https://www.instagram.com/hlnxdesign/">Instagram</a></li>
+            <li><a href="https://www.behance.net/WHOISHELENANYWAYS/projects">Behance</a></li>
+            <li><a href="https://www.linkedin.com/in/whoishelenanyways/">Linkedin</a></li>
+        </ul>
+    </nav>
+
+</section>
+<div id="lightbox" class="lightbox" onclick="this.classList.remove('active')">
+        <img src="" alt="Enlarged view">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+
+        // This selects all images in your gallery
+        document.querySelectorAll('.right-column img').forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('src');
+                lightboxImg.setAttribute('src', src); // Put the clicked image link into the lightbox
+                lightbox.classList.add('active');     // Show the lightbox
+            });
+        });
+    </script>
+</body>
+</html>

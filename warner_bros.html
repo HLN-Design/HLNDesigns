@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HLN Designs | Warner Brothers</title>
+        <link rel="stylesheet" href="css/explainer_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/logos/logo_icon_red.svg" type="image/x-icon">
+    </head>
+
+    <body>
+      <section class="navbar">
+    <a class="logo" href="index.html">
+        <img src="img/logos/logo_full_white.svg" alt="Logo">
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav>
+        <ul class="navlinks">
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+        </ul>
+    </nav>
+</section>
+<div class="layout-wrapper">
+  <aside class="left-column">
+    <div class="sticky-content">
+      
+      <div class="description">
+        <h2>Warner Brothers Acquisition<span class="highlight">.</span></h2>
+        <p>Visualising Netflix's $108 billion acquisition of Warner Brothers, focusing on the consolidation of media power, merging the world's number one streaming service with one of Hollywood's most iconic movie studios.</p>
+       <p>To illustrate the collision of media giants, I wanted it to have a Netflix user interface look. Using a clean, dark-mode aesthetic, I utilised kinetic typography and sliding UI panels to break down the data. This visual approach transformed complex financial figures into a relatable user experience, showing exactly how the new entity would dominate the entertainment landscape.</p>
+       <p>This graphic simplified a massive corporate merger, using familiar visual language to make the business implications immediately understood by a general audience.</p>
+      <h4>Credits</h4>
+      <p><span class="bold">Company:</span> 9News</p>
+      <p><span class="bold">Motion Design & Art Direction:</span> Helen Wang</p>
+      <p><span class="bold">Producer:</span> John Campbell</p>
+      <p><span class="bold">Reporter:</span> Reid Butler</p>
+      <p><span class="bold">Software:</span> After Effects, Photoshop, Media Encoder</p>
+      
+      </div>
+    </div>
+  </aside>
+
+  <main class="right-column">
+    <div class="video-controls">
+        <button>Play</button>
+        <button>Pause</button>
+        <button>Mute</button>
+      </div>
+      <video controls poster="img/portfolio/thumbnails/warner_bros.png" src="img/portfolio/warnerbros/warner_bros.mp4" alt="Netflix Acquisition of Warner Brothers Motion Graphics Design Project" width="100%"></video>
+    <img src="img/portfolio/warnerbros/warner_bros2.png" alt="Netflix Acquisition of Warner Brothers Motion Graphics Design Project BTS1">
+    <img src="img/portfolio/warnerbros/warner_bros.gif" alt="Netflix Acquisition of Warner Brothers Motion Graphics Design Project BTS2">
+  </main>
+</div>
+<section class="Work">
+ <h1 class="work-text">
+    Other work
+  </h1>
+  <div class="grid-container">
+    <div class="block showreel"><a href="showreel.html"><img src="img/portfolio/thumbnails/showreel.png" alt="Motion Graphics Design Showreel" ><div class="overlay-text">Showreel</div></a></div>
+    <div class="block infographics"><a href="erastour.html"><img src="img/portfolio/thumbnails/eras_tour.png" alt="Taylor Swift Eras Tour Motion Graphics Design Project"><div class="overlay-text">Eras Tour Review</div></a></div>
+    <div class="block other"><a href="grammys.html"><img src="img/portfolio/thumbnails/grammys.png" alt="Grammy Nominations 2024 Motion Graphics Design Project"><div class="overlay-text">Grammy Nominations 2024</div></a></div>
+    <div class="block experiential"><a href="sabrina.html"><img src="img/portfolio/thumbnails/sabrina_carpenter.png" alt="Sabrina Carpenter Motion Graphics Design Project"><div class="overlay-text">Sabrina Carpenter</div></a></div>
+    <div class="block infographics"><a href="qantas.html"><img src="img/portfolio/thumbnails/qantas.png" alt="Qantas Motion Graphics Design Project"><div class="overlay-text">Qantas: Profits & loss</div></a></div>
+    <div class="block other"><a href="emails.html"><img src="img/portfolio/thumbnails/emails.png" alt="Parliamentary Email Leaks Motion Graphics Design Project"><div class="overlay-text">Parliamentary Leak</div></a></div>
+  </div>
+     <div class="view-projects"><a href="work.html">View all projects</a></div>
+    </section>
+   <section class="call-to-action">
+    <h4 class="work-text">
+    Let's work together
+  </h4>
+   <a href="contact.html">Contact me</a>
+
+  </section>
+  
+     <section class="footer">
+        <a class="logo" href="index.html"><img src="img/logos/logo_full_white.svg" alt="Logo"> </a>
+      <nav>
+            <ul class="footer links">
+            <li><a href="mailto:HLNDesigning@gmail.com">Email</a></li>
+            <li><a href="https://www.instagram.com/hlnxdesign/">Instagram</a></li>
+            <li><a href="https://www.behance.net/WHOISHELENANYWAYS/projects">Behance</a></li>
+            <li><a href="https://www.linkedin.com/in/whoishelenanyways/">Linkedin</a></li>
+        </ul>
+    </nav>
+
+</section>
+<div id="lightbox" class="lightbox" onclick="this.classList.remove('active')">
+        <img src="" alt="Enlarged view">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+
+        // This selects all images in your gallery
+        document.querySelectorAll('.right-column img').forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('src');
+                lightboxImg.setAttribute('src', src); // Put the clicked image link into the lightbox
+                lightbox.classList.add('active');     // Show the lightbox
+            });
+        });
+    </script>
+</body>
+</html>
