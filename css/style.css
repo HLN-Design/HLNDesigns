@@ -587,7 +587,7 @@ width: 100%;
 @media screen and (max-height: 950px) and (max-width: 875px){
 .video-section {
     width: 100%;
-   height: 40vh;
+   height: 50vh;
 }
 .video-overlay {
     position: absolute;
