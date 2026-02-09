@@ -46,20 +46,26 @@ body {
 }
 .navlinks a {
 	font-size: 22px;
-	text-decoration: none;
-	color: white;
-	line-height: 44px;
-	padding: 33px;
+    text-decoration: none;
+    color: white;
 	padding-inline: 90px;
 	background-color: #E41E11;
+	display: flex;
+    align-items: center; /* Vertically centers the text */
+    height: 100%;        /* Forces the background to be exactly 83px */
+    box-sizing: border-box; 
 }
 .navlinks {
 	list-style: none;
-	position: absolute;
-	right: 0px;
+    position: absolute;
+    right: 0px;
+    margin: 0;
+    display: flex; /* Use flex instead of floats */
+    height: 100%;  /* Fill the 83px navbar */
 }
 .navlinks li {
-	float: right;
+	display: flex;
+    height: 100%;
 }
 .navlinks a:hover {
 	background-color: #9a180f;

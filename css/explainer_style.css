@@ -34,43 +34,45 @@ body {
   background: white;
   font-family: Gotham Bold;
 }
-
 .navbar {
-  position: fixed;
-  margin: 0;
-  top: 0px;
-  width: 100%;
-  height: 83px;
-  background: #E41E11;
-  z-index: 9999999999;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+	position: fixed;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	height: 83px;
+	background: #E41E11;
+	z-index: 9999999999;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+	font-family: Gotham Bold;
 }
-
 .navbar .logo img {
-  height: 70px;
-  position: absolute;
-  left: 3vw;
-  top: 0.6vh;
+	height: 70px;
+	position: absolute;
+	left: 3vw;
+	top: 0.6vh;
 }
-
 .navlinks a {
-  font-size: 22px;
-  text-decoration: none;
-  color: white;
-  line-height: 43px;
-  padding: 33px;
-  padding-inline: 90px;
-  background-color: #E41E11;
+	font-size: 22px;
+    text-decoration: none;
+    color: white;
+	padding-inline: 90px;
+	background-color: #E41E11;
+	display: flex;
+    align-items: center; /* Vertically centers the text */
+    height: 100%;        /* Forces the background to be exactly 83px */
+    box-sizing: border-box; 
 }
-
 .navlinks {
-  list-style: none;
-  position: absolute;
-  right: 0px;
+	list-style: none;
+    position: absolute;
+    right: 0px;
+    margin: 0;
+    display: flex; /* Use flex instead of floats */
+    height: 100%;  /* Fill the 83px navbar */
 }
-
 .navlinks li {
-  float: right;
+	display: flex;
+    height: 100%;
 }
 
 .navlinks a:hover {
