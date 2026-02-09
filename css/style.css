@@ -64,60 +64,70 @@ body {
 .navlinks a:hover {
 	background-color: #9a180f;
 }
-
 .video-section {
-	position: relative;
-	top: 80px;
-	width: 100%;
-	height: auto;
-	overflow: hidden;
+    position: relative;
+    top: 80px;
+    width: 100%;
+   height: auto;
+    overflow: hidden;
+    line-height: 0; /* Removes white gap under video */
 }
 .bg-video {
-	width: 100%;
-	height: auto;
-	display: block;
-	filter: brightness(150%);
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(150%);
 }
 .video-overlay {
-	position: absolute;
-	top: 30vw;
-	left: 105px;
-	width: 100%;
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	box-sizing: border-box;
+    position: absolute;
+    top: 45%; /* Locked 100px from bottom */
+    left: 10%;    /* Locked 50px from left */
+    width: 100%;
+    height: 100%;
+    min-height: 100vh; /* Prevents video from being shorter than screen */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    z-index: 10;
 }
 .video-overlay h1 {
-	color: white;
-	font-family: Gotham Light;
-	padding-top: 20px;
-	font-size: 26px;
-	position: absolute;
-	top: -150px;
-	letter-spacing: 0.09px;
-	line-height: 32px;
-	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.836);
+    color: white;
+    font-family: 'Gotham Light', sans-serif;
+    font-size: clamp(20px, 3vw, 45px); /* Scales with page */
+    margin: 0;
+    padding-top: 20px;
+	padding-bottom: 20px;
+    letter-spacing: 0.09px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    position: relative;
+    top: 0; /* Resetting your absolute positioning from before */
+}
+.view-project-btn {
+    background-color: #ee3224;
+    color: white;
+    padding: 30px;
+	padding-left: 2.5vw;
+	padding-right: 2.5vw;
+    text-decoration: none;
+    font-family: 'Gotham Bold', sans-serif;
+    text-transform: uppercase;
+    border-radius: 7px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-size: clamp(12px, 1.5vw, 19px);
+    display: inline-block;
+}
+.view-project-btn:hover {
+    background-color: white;
+    color: #ee3224;
+    transform: translateY(-3px);
 }
 .redletter {
 	color: #ee3224;
 	font-family: Gotham Bold;
 }
-.view-project-btn {
-	background-color: #ee3224;
-	color: white;
-	padding: 30px 90px;
-	text-decoration: none;
-	font-family: 'Gotham Bold', sans-serif;
-	text-transform: uppercase;
-	border-radius: 7px;
-	margin-bottom: 20px;
-	transition: background 0.3s ease;
-}
-.view-project-btn:hover {
-	background-color: white;
-	color: #ee3224;
-}
+
 .highlight {
 	color: #ee3224;
 	font-family: Gotham Bold;
@@ -336,33 +346,10 @@ section.footer a:hover {
     display: none !important;
 }
 
-@media screen and (max-width:1754px) {
-	.Work {
-	padding-left: 50px;
-	padding-right: 50px;
-	}
+@media screen and (max-width:1870px) {
+.video-overlay {   
+    top: 50%; /* Locked 100px from bottom */
 }
-
-@media screen and (max-width: 1470px) {
-	.overlay-text{
-     font-size: clamp(10px, 2vw, 11px); /* Fluid typography */
-	transform: translate(2%, -200%); /* Centers exactly over the image */
-	}
-	
-}
-
-@media screen and (max-width: 1175px) {
-	.video-overlay {
-		position: absolute;
-		top: 450px;
-	}
-}
-@media screen and (max-width: 1105px) {
-	.video-overlay {
-		position: absolute;
-		top: 430px;
-	}
-	
 }
 @media screen and (max-width: 1018px) {
 		.mobile-only {
@@ -465,24 +452,27 @@ section.footer a:hover {
 	}
 }
 @media screen and (min-width: 761px) and (max-width: 1018px) {
-	
 	.video-section {
-		position: relative;
-		top: 70px;
-		width: 100%;
-		height: 60vh;
-		overflow: hidden;
-	}
-	.bg-video {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-  }
-	.video-overlay {
-		position: absolute;
-		top: 0vw;
-	}
-	
+    width: 100%;
+   height: 70vh;
+}
+.bg-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(150%);
+}
+.video-overlay {
+    position: absolute;
+    top: 35%; /* Locked 100px from bottom */
+}
+
+.view-project-btn {
+    
+    padding: 20px;
+	padding-left: 2.5vw;
+	padding-right: 2.5vw;
+}
 	.grid-container {
 		grid-template-columns: repeat(2,2fr) !important;
 		gap: 15px;
@@ -501,10 +491,6 @@ section.footer a:hover {
 	text-decoration-thickness: 3px;
 	text-underline-offset: 10px
 }
-	.overlay-text{
-     font-size: clamp(10px, 2vw, 13px); /* Fluid typography */
-	transform: translate(2%, -200%); /* Centers exactly over the image */
-}
 .Work{
 	padding-left: 50px;
 	padding-right: 50px;
@@ -512,28 +498,27 @@ section.footer a:hover {
 }
 
 @media screen and (min-width: 499px) and (max-width: 760px) {
+.video-section {
+width: 100%;
+height: 70vh;
+}
+.bg-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(150%);
+}
+.video-overlay {
+    position: absolute;
+    top: 18%; /* Locked 100px from bottom */
+}
 
-	.video-section {
-		position: relative;
-		top: 70px;
-		width: 100%;
-		height: 70vh;
-		overflow: hidden;
-	}
-	.bg-video {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-	.video-overlay {
-		position: absolute;
-		bottom: 120px;
-		left: 20px;
-	}
-	.view-project-btn {
-		position: absolute;
-		top: -30px;
-	}
+.view-project-btn {
+    
+    padding: 20px;
+	padding-left: 2.5vw;
+	padding-right: 2.5vw;
+}
 	.grid-container {
 		grid-template-columns: repeat(1,1fr) !important;
 		gap: 15px;
@@ -545,42 +530,40 @@ section.footer a:hover {
 		width: 30px;
 		height: 10px;
 	}
-	.navbar {
-		height: 80px !important;
-	}
-.overlay-text{
-    font-size: clamp(15px, 5vw, 20px); /* Fluid typography */
-}
 .Work{
 	padding-left: 20px;
 	padding-right: 20px;
 }
+
 }
 
 @media screen and (min-width: 0px) and (max-width: 500px) {
+	.Work{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.video-section {
+    width: 100%;
+   height: 30vh;
+}
+.bg-video {
+width: 100%;
+        height: 100%;
+        /* This zooms the video to fill the 70vh height from the center */
+        object-fit: cover; 
+        object-position: center;
+}
+.video-overlay {
+    position: absolute;
+    top: 30%; /* Locked 100px from bottom */
+}
 
-	.video-section {
-		position: relative;
-		top: 70px;
-		width: 100%;
-		height: 40vh;
-		overflow: hidden;
-	}
-	.bg-video {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-	.video-overlay {
-		position: absolute;
-		bottom: 220px;
-		left: 20px;
-	}
-	.view-project-btn {
-		position: absolute;
-		top: -30px;
-	}
-
+.view-project-btn {
+    
+    padding: 20px;
+	padding-left: 2.5vw;
+	padding-right: 2.5vw;
+}
 	.grid-container {
 		grid-template-columns: repeat(1,1fr) !important;
 		gap: 15px;
@@ -599,48 +582,17 @@ section.footer a:hover {
 	text-decoration-thickness: 3px;
 	text-underline-offset: 10px
 }
-.overlay-text{
-	font-size: clamp(10px, 10vw, 20px); /* Fluid typography */
 }
-}
-@media screen and (max-height: 1050px) {
- .video-overlay{
-  position: absolute;
-  top: 400px;
- }
-  .video-overlay h1{
-	font-size: 25px;
- }
- .view-project-btn{
-	font-size: 15px;
-	padding: 20px 30px;
- }
-}
-@media screen and (max-height: 1010px) {
- .video-overlay{
-  position: absolute;
-  top: 600px;
- }
-}
-@media screen and (max-height: 990px) {
- .video-overlay{
-  position: absolute;
-  top: 600px;
- }
-}
+
 @media screen and (max-height: 950px) {
- .video-overlay{
-  position: absolute;
-  top: 50px;
- }
- .video-overlay h1{
-	font-size: clamp(15px, 10vw, 20px); /* Fluid typography */
-	line-height: 25px;
-	 }
- .view-project-btn{
-	font-size: clamp(5px, 5vw, 10px); /* Fluid typography */
-	padding: 15px 30px;
- }
+.video-section {
+    width: 100%;
+   height: 400px;
+}
+.video-overlay {
+    position: absolute;
+    top: 40%; /* Locked 100px from bottom */
+}
  .view-projects a{
 	display: flex;
 	font-size: 3vh;
@@ -656,18 +608,4 @@ font-size: clamp(15px, 4vw, 20px); /* Fluid typography */
 transform: translate(2%, -200%); /* Centers exactly over the image */
 }
 
-}
-@media screen and (max-height: 670px) {
- .video-overlay{
-  position: absolute;
-  top: 300px;
- }
- .view-projects a{
-	display: flex;
-	font-size: 2.5vh;
-	text-decoration-color: rgb(203, 203, 203);
-	text-decoration-thickness: 3px;
-	text-underline-offset: 10px;
-	padding-bottom: -900px;
-}
 }
