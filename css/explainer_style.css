@@ -144,7 +144,7 @@ body {
 
 .description p {
   font-family: 'Gotham Regular', sans-serif;
-  font-size: clamp(10px, 4vw, 20px);
+  font-size: clamp(10px, 1vw, 20px);
   line-height: 1.4;
   max-width: 800px;
   padding-right: 30px;
