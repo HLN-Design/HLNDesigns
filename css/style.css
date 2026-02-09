@@ -631,7 +631,7 @@ section.footer a:hover {
 @media screen and (max-height: 950px) {
  .video-overlay{
   position: absolute;
-  top: 230px;
+  top: 50px;
  }
  .video-overlay h1{
 	font-size: clamp(15px, 10vw, 20px); /* Fluid typography */
