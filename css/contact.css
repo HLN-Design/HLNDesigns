@@ -259,7 +259,7 @@ section.footer a:hover {
 	}
 	.navlinks {
 		display: flex !important;
-		flex-direction: column-reverse !important;
+		flex-direction: column !important;
 		align-items: center !important;
 		position: relative !important;
 		right: auto !important;
