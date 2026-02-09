@@ -135,15 +135,15 @@ display: flex;
 
 }
 .work-text {
-	position: relative;
-	display: flex;
-	font-family: Gotham Bold;
-	font-size: clamp(40px, 6vw, 90px); /* Fluid typography */
-	margin: 0;
-	padding-left: 2%;
-	padding-right: 2%;
-	padding-bottom: 2%;
-	top: 0;
+  position: relative;
+  display: flex;
+  font-family: Gotham Bold;
+  font-size: clamp(40px, 6vw, 90px);
+  margin: 0;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  top: 0;
 }
 
 .grid-container {
@@ -189,16 +189,16 @@ display: flex;
 .view-projects a:hover{
 	color: #E41E11;
 }
-.call-to-action{
-	display: flex;
-    flex-direction: column;    /* Stacks h4 and a vertically */
-    align-items: center;       /* Centers them horizontally */
-    justify-content: center;   /* Centers them vertically within the section */
-    text-align: center;
-    padding: 150px 20px;        /* Adds breathing room top and bottom */
-	background-color: white;
-	box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.2);
-	margin-bottom: 200px;
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 150px 20px;
+  background-color: white;
+  box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 200px;
 }
 .call-to-action a {
     display: inline-block;
@@ -211,9 +211,9 @@ display: flex;
     font-size: 18px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.call-to-action h4{
-	font-family: Gotham Medium;
-	font-size: 3vw;
+.call-to-action h4 {
+    font-family: Gotham Medium;
+   font-size: clamp(30px, 3vw, 40px);
 }
 
 /* Hover Effect */

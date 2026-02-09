@@ -571,6 +571,7 @@ section.footer a:hover {
   }
   .right-column img,
   .right-column video:not(:first-of-type) {
+    padding-top: 10px;
     order: 4;
   }
   .layout-wrapper {

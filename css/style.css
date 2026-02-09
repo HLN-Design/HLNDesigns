@@ -634,11 +634,11 @@ section.footer a:hover {
   top: 230px;
  }
  .video-overlay h1{
-	font-size: 23px;
-	margin-bottom: 20px;
- }
+	font-size: clamp(15px, 10vw, 20px); /* Fluid typography */
+	line-height: 25px;
+	 }
  .view-project-btn{
-	font-size: 10px;
+	font-size: clamp(5px, 5vw, 10px); /* Fluid typography */
 	padding: 15px 30px;
  }
  .view-projects a{
@@ -651,9 +651,9 @@ section.footer a:hover {
 section.footer ul li a {
 font-size: 12px;
 }
-	.overlay-text{
-    font-size: clamp(15px, 4vw, 20px); /* Fluid typography */
-	transform: translate(2%, -200%); /* Centers exactly over the image */
+.overlay-text{
+font-size: clamp(15px, 4vw, 20px); /* Fluid typography */
+transform: translate(2%, -200%); /* Centers exactly over the image */
 }
 
 }
@@ -661,13 +661,6 @@ font-size: 12px;
  .video-overlay{
   position: absolute;
   top: 300px;
- }
- .video-overlay h1{
-	font-size: 25px;
- }
- .view-project-btn{
-	font-size: 15px;
-	padding: 20px 30px;
  }
  .view-projects a{
 	display: flex;
