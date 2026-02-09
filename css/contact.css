@@ -82,7 +82,7 @@ display: flex;
 	margin: 0;
 	top: 10vh;
 	background-color: white;
-	margin-bottom: 300px;
+	margin-bottom: 200px;
 	box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.2);
 
 }
@@ -174,8 +174,14 @@ section.footer a:hover {
 	pointer-events: none;
 	position: absolute;
 }
+.mobile-only {
+    display: none !important;
+}
 
 @media screen and (max-width:1044px) {
+	.mobile-only {
+    display: block !important; /* Show the link on mobile */
+}
 	.menu-checkbox {
 		display: none !important;
 		visibility: hidden;
@@ -246,7 +252,7 @@ section.footer a:hover {
 	}
 	.navlinks {
 		display: flex !important;
-		flex-direction: column !important;
+		flex-direction: column-reverse !important;
 		align-items: center !important;
 		position: relative !important;
 		right: auto !important;
@@ -261,7 +267,7 @@ section.footer a:hover {
 	.navlinks a {
 		display: block !important;
 		width: 100% !important;
-		padding: 25px 0 !important;
+		padding: 15px 0 !important;
 		font-size: 24px !important;
 		text-align: center !important;
 		background-color: transparent !important;
@@ -272,3 +278,13 @@ section.footer a:hover {
 	}
 }
 	
+@media screen and (max-width:500px) {
+	.description{
+		top: 2vh;
+		left: 30px;
+	}
+	.description h1{
+		width: 80%;
+		line-height: 50px;
+	}
+}

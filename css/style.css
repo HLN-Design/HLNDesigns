@@ -33,9 +33,10 @@ body {
 	top: 0px;
 	width: 100%;
 	height: 83px;
-	background: #ee3224;
+	background: #E41E11;
 	z-index: 9999999999;
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+	font-family: Gotham Bold;
 }
 .navbar .logo img {
 	height: 70px;
@@ -47,10 +48,10 @@ body {
 	font-size: 22px;
 	text-decoration: none;
 	color: white;
-	line-height: 43px;
+	line-height: 44px;
 	padding: 33px;
 	padding-inline: 90px;
-	background-color: #ee3224;
+	background-color: #E41E11;
 }
 .navlinks {
 	list-style: none;
@@ -63,6 +64,7 @@ body {
 .navlinks a:hover {
 	background-color: #9a180f;
 }
+
 .video-section {
 	position: relative;
 	top: 80px;
@@ -330,6 +332,10 @@ section.footer a:hover {
 	pointer-events: none;
 	position: absolute;
 }
+.mobile-only {
+    display: none !important;
+}
+
 @media screen and (max-width:1754px) {
 	.Work {
 	padding-left: 50px;
@@ -358,7 +364,10 @@ section.footer a:hover {
 	}
 	
 }
-@media screen and (min-width: 761px) and (max-width: 1018px) {
+@media screen and (max-width: 1018px) {
+		.mobile-only {
+    display: block !important; /* Show the link on mobile */
+}
 	.menu-checkbox {
 		display: none !important;
 		visibility: hidden;
@@ -388,14 +397,15 @@ section.footer a:hover {
 		border-radius: 3px;
 		transition: 0.3s ease;
 	}
+
 	.navbar nav {
 		display: none;
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 370px;
-		background-color: #ee3224;
+		height: 470px;
+		background-color: #E41E11;
 		z-index: 1000000000;
 		padding-top: 100px;
 	}
@@ -429,7 +439,7 @@ section.footer a:hover {
 	}
 	.navlinks {
 		display: flex !important;
-		flex-direction: column !important;
+		flex-direction: column-reverse !important;
 		align-items: center !important;
 		position: relative !important;
 		right: auto !important;
@@ -444,15 +454,18 @@ section.footer a:hover {
 	.navlinks a {
 		display: block !important;
 		width: 100% !important;
-		padding: 25px 0 !important;
+		padding: 15px 0 !important;
 		font-size: 24px !important;
 		text-align: center !important;
 		background-color: transparent !important;
 	}
 	.navlinks a:hover {
 		color: white !important;
-		background-color: #ee3224 !important;
+		background-color: #E41E11 !important;
 	}
+}
+@media screen and (min-width: 761px) and (max-width: 1018px) {
+	
 	.video-section {
 		position: relative;
 		top: 70px;
@@ -467,7 +480,7 @@ section.footer a:hover {
   }
 	.video-overlay {
 		position: absolute;
-		top: 50vw;
+		top: 0vw;
 	}
 	
 	.grid-container {
@@ -499,97 +512,7 @@ section.footer a:hover {
 }
 
 @media screen and (min-width: 499px) and (max-width: 760px) {
-	.menu-checkbox {
-		display: none !important;
-		visibility: hidden;
-		pointer-events: none;
-		position: absolute;
-	}
-	.menu-checkbox {
-		display: none !important;
-	}
-	.hamburger {
-		display: flex !important;
-		flex-direction: column;
-		justify-content: space-between;
-		width: 30px;
-		height: 20px;
-		position: fixed;
-		right: 5vw;
-		top: 30px;
-		z-index: 1000000001;
-		cursor: pointer;
-	}
-	.hamburger span {
-		display: block;
-		height: 3px;
-		width: 100%;
-		background-color: rgb(255, 255, 255);
-		border-radius: 3px;
-		transition: 0.3s ease;
-	}
-	.navbar nav {
-		display: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 370px;
-		background-color: #ee3224;
-		z-index: 1000000000;
-		padding-top: 100px;
-	}
-	.menu-checkbox:checked~nav {
-		display: block !important;
-	}
-	.menu-checkbox:checked+.hamburger span:nth-child(1) {
-		transform: translateY(9px) rotate(45deg);
-	}
-	.menu-checkbox:checked+.hamburger span:nth-child(2) {
-		opacity: 0;
-	}
-	.menu-checkbox:checked+.hamburger span:nth-child(3) {
-		transform: translateY(-9px) rotate(-45deg);
-	}
-	.navbar nav {
-		background-color: rgba(0, 0, 0, 0.5);
-		backdrop-filter: blur(6px);
-	}
-	.navbar {
-		z-index: 1000000000 !important;
-		height: 1200px !important;
-		display: block !important;
-	}
-	.navbar .logo {
-		position: relative;
-		z-index: 1000000005 !important;
-	}
-	.navlinks {
-		display: flex !important;
-		flex-direction: column !important;
-		align-items: center !important;
-		position: relative !important;
-		right: auto !important;
-		top: auto !important;
-		width: 100% !important;
-		padding: 0 !important;
-	}
-	.navlinks li {
-		width: 100%;
-		float: none !important;
-	}
-	.navlinks a {
-		display: block !important;
-		width: 100% !important;
-		padding: 25px 0 !important;
-		font-size: 24px !important;
-		text-align: center !important;
-		background-color: transparent !important;
-	}
-	.navlinks a:hover {
-		color: white !important;
-		background-color: #ee3224 !important;
-	}
+
 	.video-section {
 		position: relative;
 		top: 70px;
@@ -629,107 +552,18 @@ section.footer a:hover {
     font-size: clamp(15px, 5vw, 20px); /* Fluid typography */
 }
 .Work{
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 }
+
 @media screen and (min-width: 0px) and (max-width: 500px) {
-	.menu-checkbox {
-		display: none !important;
-		visibility: hidden;
-		pointer-events: none;
-		position: absolute;
-	}
-	.menu-checkbox {
-		display: none !important;
-	}
-	.hamburger {
-		display: flex !important;
-		flex-direction: column;
-		justify-content: space-between;
-		width: 30px;
-		height: 20px;
-		position: fixed;
-		right: 5vw;
-		top: 30px;
-		z-index: 1000000001;
-		cursor: pointer;
-	}
-	.hamburger span {
-		display: block;
-		height: 3px;
-		width: 100%;
-		background-color: rgb(255, 255, 255);
-		border-radius: 3px;
-		transition: 0.3s ease;
-	}
-	.navbar nav {
-		display: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 370px;
-		background-color: #ee3224;
-		z-index: 1000000000;
-		padding-top: 100px;
-	}
-	.menu-checkbox:checked~nav {
-		display: block !important;
-	}
-	.menu-checkbox:checked+.hamburger span:nth-child(1) {
-		transform: translateY(9px) rotate(45deg);
-	}
-	.menu-checkbox:checked+.hamburger span:nth-child(2) {
-		opacity: 0;
-	}
-	.menu-checkbox:checked+.hamburger span:nth-child(3) {
-		transform: translateY(-9px) rotate(-45deg);
-	}
-	.navbar nav {
-		background-color: rgba(0, 0, 0, 0.5);
-		backdrop-filter: blur(6px);
-	}
-	.navbar {
-		z-index: 1000000000 !important;
-		height: 1200px !important;
-		display: block !important;
-	}
-	.navbar .logo {
-		position: relative;
-		z-index: 1000000005 !important;
-	}
-	.navlinks {
-		display: flex !important;
-		flex-direction: column !important;
-		align-items: center !important;
-		position: relative !important;
-		right: auto !important;
-		top: auto !important;
-		width: 100% !important;
-		padding: 0 !important;
-	}
-	.navlinks li {
-		width: 100%;
-		float: none !important;
-	}
-	.navlinks a {
-		display: block !important;
-		width: 100% !important;
-		padding: 25px 0 !important;
-		font-size: 24px !important;
-		text-align: center !important;
-		background-color: transparent !important;
-	}
-	.navlinks a:hover {
-		color: white !important;
-		background-color: #ee3224 !important;
-	}
+
 	.video-section {
 		position: relative;
 		top: 70px;
 		width: 100%;
-		height: 70vh;
+		height: 40vh;
 		overflow: hidden;
 	}
 	.bg-video {
@@ -757,9 +591,6 @@ section.footer a:hover {
 	.text-with-bar::before {
 		width: 30px;
 		height: 10px;
-	}
-	.navbar {
-		height: 80px !important;
 	}
 	 .view-projects a{
 	display: flex;
@@ -800,14 +631,15 @@ section.footer a:hover {
 @media screen and (max-height: 950px) {
  .video-overlay{
   position: absolute;
-  top: 400px;
+  top: 230px;
  }
  .video-overlay h1{
-	font-size: 25px;
+	font-size: 23px;
+	margin-bottom: 20px;
  }
  .view-project-btn{
-	font-size: 15px;
-	padding: 20px 30px;
+	font-size: 10px;
+	padding: 15px 30px;
  }
  .view-projects a{
 	display: flex;
@@ -820,7 +652,7 @@ section.footer ul li a {
 font-size: 12px;
 }
 	.overlay-text{
-    font-size: clamp(10px, 2vw, 13px); /* Fluid typography */
+    font-size: clamp(15px, 4vw, 20px); /* Fluid typography */
 	transform: translate(2%, -200%); /* Centers exactly over the image */
 }
 
@@ -829,7 +661,6 @@ font-size: 12px;
  .video-overlay{
   position: absolute;
   top: 300px;
-  
  }
  .video-overlay h1{
 	font-size: 25px;
@@ -846,5 +677,4 @@ font-size: 12px;
 	text-underline-offset: 10px;
 	padding-bottom: -900px;
 }
-
 }
