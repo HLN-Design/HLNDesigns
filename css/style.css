@@ -584,14 +584,14 @@ width: 100%;
 }
 }
 
-@media screen and (max-height: 950px) {
+@media screen and (max-height: 950px) and (max-width: 875px){
 .video-section {
     width: 100%;
-   height: 400px;
+   height: 40vh;
 }
 .video-overlay {
     position: absolute;
-    top: 40%; /* Locked 100px from bottom */
+    top: 30%; /* Locked 100px from bottom */
 }
  .view-projects a{
 	display: flex;
