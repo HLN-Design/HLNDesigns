@@ -1,2 +1,5 @@
-/*.mp4
-  Cache-Control: no-transform
+/*
+  Access-Control-Allow-Origin: *
+
+/img/portfolio/*
+  Cache-Control: no-cache
